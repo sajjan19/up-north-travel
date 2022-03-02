@@ -1,0 +1,994 @@
+body {
+    background-image: url(../img/leaves-pattern.png);
+}
+
+.bg-centre {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.upnorthtravelblack {
+    color: white;
+    text-shadow: 1px 1px 10px red;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+
+/* --------------------- HEADER ------------------------ */
+
+header h1 {
+    text-align: center;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    font-family: 'Noto Serif', serif;
+    text-shadow: 0px -1px 10px blue;
+}
+
+header {
+    background-color: red;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    will-change: top;
+    transition: top .3s ease;
+    z-index: 500;
+    padding: 5px 15px;
+    box-shadow: 0px 1px 3px black;
+}
+
+header.header-up {
+    top: -100px;
+    box-shadow: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.subtitle {
+    text-align: center;
+    color: blue;
+    margin-top: 40px;
+}
+
+.subtitle h1 {
+    border: 1px solid black;
+    display: inline;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: white;
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+
+/* ------------------------Company Logo------------------- */
+
+.img-wrap {
+    flex-grow: 2;
+}
+
+header .img-link {
+    display: block;
+}
+
+header img {
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    box-shadow: -3px 1px 10px blue;
+}
+
+
+/* --------------------------Navigation--------------------- */
+
+.gn {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 0, 0, .9);
+    z-index: 999;
+}
+
+.gn li {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.gn li:last-child {
+    box-shadow: -1px 5px 10px 0px black;
+}
+
+.gn a {
+    text-decoration: none;
+    color: white;
+    padding: 25px 15px;
+    display: block;
+}
+
+.gn a:hover {
+    color: black;
+}
+
+
+/*
+|------------------------------------------
+|  Burger
+|------------------------------------------
+*/
+
+.gn-trigger {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: 0;
+    background: transparent;
+    margin-right: 15px;
+}
+
+.burger {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    right: 0;
+    top: 50%;
+}
+
+.burger:before,
+.burger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    height: 5px;
+}
+
+.burger:before {
+    top: 14px;
+}
+
+.burger:after {
+    bottom: 14px;
+}
+
+.burger,
+.burger:before,
+.burger:after {
+    transition-property: transform, top, background;
+    transition-duration: .5s;
+    background: lightskyblue;
+    border-radius: 10px;
+}
+
+.gn-trigger.is-active .burger:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.gn-trigger.is-active .burger:after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.gn-trigger.is-active .burger {
+    background: rgba(200, 200, 255, 0);
+}
+
+
+/* -------------------Footer-------------------- */
+
+.return {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px
+}
+
+
+/* CSS Styled for Return to Top Link */
+
+.return a:link {
+    color: red;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.return a:visited {
+    color: red;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.return a:hover {
+    color: black;
+    font-size: 2.1em;
+    text-decoration: underline;
+}
+
+#footer {
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: center;
+}
+
+#footer a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#footer a:hover {
+    color: whitesmoke;
+    text-shadow: 0px 0px 1px red;
+}
+
+#footer p {
+    margin-top: 10px;
+}
+
+
+/* -------------------Banner---------------------- */
+
+.banner .bg-img {
+    background-image: url("../img/bg576.jpg");
+    height: 500px;
+}
+
+.banner .container {
+    padding: 15px;
+    line-height: 1.2;
+    /* border: 2px solid white; */
+    background-color: rgba(50, 50, 50, .3);
+    text-align: center;
+    color: white;
+}
+
+.banner .container .canada-info {
+    display: none;
+}
+
+.banner p {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.banner .container .button {
+    background: rgb(255, 36, 36);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 15px;
+}
+
+.banner .container .button:hover {
+    background: white;
+    color: rgb(255, 36, 36);
+    border: solid 1px rgb(255, 36, 36);
+
+}
+
+
+/* ----------------- Province and Territory CARDS ------------------- */
+
+#container {
+    padding: 0px 20px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.cards {
+    background-color: white;
+    max-width: 400px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.cards h2 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.cards p {
+    font-family: 'Noto Sans', 'sans serif';
+}
+
+.cards .white-line {
+    width: 90%;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+.cards .black-line {
+    width: 90%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+/* Card Image */
+
+.card-img {
+    min-height: 150px;
+}
+
+.card-img img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    max-height: 1000px;
+    border-radius: 3px;
+}
+
+
+/* Buttons */
+
+.cards button {
+float: right;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: rgb(200, 200, 200);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cards button:hover {
+    padding: 6px;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 5px white;
+}
+
+
+/* --------------------------- About Canada Home Page --------------------- */
+
+.about-canada {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.about-canada p {
+    text-align: left;
+    padding: 20px;
+    font-family: 'Noto Sans', 'sans serif';
+}
+
+.provinces-and-terr {
+    margin-top: 10px;
+}
+
+.provinces-and-terr h1 {
+    font-size: 25px;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.provinces-and-terr ul {
+    text-align: center;
+    /* margin-top: 10px; */
+    /* line-height: 1.3; */
+}
+
+.provinces-and-terr li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.provinces-and-terr li {
+    margin: 15px 0;
+}
+
+.provinces-and-terr li a:hover {
+    color: red;
+}
+
+.provinces-and-terr h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.provinces-and-terr h1 a:hover {
+    color: red;
+}
+
+.canada-info {
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 500px;
+
+    background-color: rgba(100, 100, 100, .3);
+    border-radius: 10px;
+}
+
+.canada-info ul {
+    padding: 15px 0;
+    list-style: none;
+    margin: 20px auto;
+}
+
+.canada-info span {
+    font-size: 1.1em;
+    color: red;
+    line-height: 1.2;
+}
+
+.provinces-and-terr img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+/* -----------------------------Provinces and Territories--------------------------- */
+
+
+/* alberta */
+
+.alberta {
+    background-color: #053293;
+    box-shadow: 0px 0px 15px #FFEC40;
+    color: white;
+}
+
+
+/* british columbia */
+
+.britishcolumbia {
+    background-color: green;
+    box-shadow: 0px 0px 15px #002680;
+    color: white;
+}
+
+
+/* manitoba */
+
+.manitoba {
+    background-color: #002680;
+    box-shadow: 0px 0px 15px #0E4F0E;
+    color: white;
+}
+
+
+/* new brunswick */
+
+.newbrunswick {
+    background-color: #F4C601;
+    box-shadow: 0px 0px 15px #D32A27;
+    color: black;
+}
+
+.newbrunswick .card-content h2 {
+    color: black;
+}
+
+.card-content h2 {
+    text-decoration: underline;
+
+}
+
+/* newfoundland */
+
+.newfoundland {
+    background-color: #002373;
+    box-shadow: 0px 0px 15px #CD0019;
+    color: white;
+}
+
+
+/* nova scotia */
+
+.novascotia {
+    background-color: #0045b8;
+    box-shadow: 0px 0px 15px white;
+    color: white;
+}
+
+
+/* ontario */
+
+.ontario {
+    background-color: #D00C27;
+    box-shadow: 0px 0px 15px #001F7E;
+    color: white;
+}
+
+
+/* pei */
+
+.pei {
+    background-color: #D54040;
+    box-shadow: 0px 0px 15px white;
+    color: white;
+}
+
+
+/* quebec */
+
+.quebec {
+    background-color: #001F97;
+    box-shadow: 0px 0px 15px white;
+    color: white;
+}
+
+
+/* saskatchewan */
+
+.saskatchewan {
+    background-color: #016A1B;
+    box-shadow: 0px 0px 15px #FDD500;
+    color: white;
+}
+
+
+/* nwt */
+
+.nwt {
+    background-color: white;
+    box-shadow: 0px 0px 15px #0056b9;
+    color: black;
+}
+
+.nwt .card-content h2 {
+    color: black;
+}
+
+
+/* nunavut */
+
+.nunavut {
+    background-color: #FDD500;
+    box-shadow: 0px 0px 15px #D6270B;
+    color: black;
+}
+
+.nunavut .card-content h2 {
+    color: black;
+}
+
+
+/* yukon */
+
+.yukon {
+    background-color: #187B00;
+    box-shadow: 0px 0px 15px #0738ac;
+    color: white;
+}
+
+.card-content h2 {
+    padding: 10px;
+    font-family: 'Noto Serif', serif;
+    font-size: 25px;
+}
+
+
+/* -------------------------About Canada---------------------- */
+
+.about-canada {
+    padding: 25px 0;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: center;
+    max-width: 800px;
+
+}
+
+.about-canada .button {
+    background: rgb(255, 36, 36);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+.about-canada .button:hover {
+    background: white;
+    color: rgb(255, 36, 36);
+    border: solid 1px rgb(255, 36, 36);
+
+
+}
+
+.about-canada p {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.column {
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.top-col,
+.bottom-col {
+    background-color: rgb(99, 99, 99);
+    border-radius: 10px;
+}
+
+
+/* ----------------- Lightbox Container ----------------------- */
+
+.lightboxcontainer {
+    /* width: 800px; */
+margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 125px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 16px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.lightboxheader {
+    font-size: 25px;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.zoom-img {
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 5px;
+}
+
+#lightboxBg {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 150, 150, .5);
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+#lightboxBg.active {
+    display: grid;
+    place-items: center;
+}
+
+#lightboxImg {
+    max-width: 70%;
+    max-height: 70%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+}
+
+.images h1 {
+    text-align: center;
+    color: blue;
+}
+
+.images:hover {
+    text-shadow: 0px 0px 10px black;
+    transform: scale(1.05);
+}
+
+
+/* ----------------- About Me----------------------- */
+
+.about {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.about p {
+    margin: 20px 0;
+    font-family: 'Noto Sans', 'sans serif';
+}
+
+.aboutimage {
+    position: relative;
+    width: 400px;
+    margin: 35px auto;
+}
+
+.aboutimage img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.aboutimage:hover {
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image_overlay_blur {
+    backdrop-filter: blur(5px);
+}
+
+.image_overlay>* {
+    transform: translateY(30px);
+    transition: transform 0.3s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.image_overlay:hover>* {
+    transform: translateY(0px);
+}
+
+.image_title {
+    font-size: 1.5em;
+}
+
+.about-description {
+    margin: 30px auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+
+.about-description p {
+    font-family: 'Noto Sans', 'sans serif';
+    color: white;
+    margin: 25px;
+}
+
+
+/* ----------------------- Media Queries --------------------------------- */
+
+@media (min-width: 576px) {
+    .lightboxcontainer {
+        grid-template-columns: repeat(3, 150px);
+        grid-gap: 20px;
+    }
+    .zoom-img {
+        width: 150px;
+        height: 150px;
+    }
+    header h1 {
+        font-size: 25px;
+        line-height: 1.1;
+    }
+    .banner .bg-img {
+        background-image: url("../img/bg768.jpg");
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutimage {
+        width: 600px;
+    }
+    .provinces-and-terr .right-col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* padding: 25px; */
+        /* margin: 10px; */
+    }
+    .provinces-and-terr .right-col li {
+        list-style: none;
+    }
+    .about-canada {
+        padding: 20px 15px;
+    }
+    .top-col {
+        flex-basis: 45%;
+        width: 45%;
+        border-radius: 10px 0 0 10px;
+    }
+    .bottom-col {
+        flex-basis: 45%;
+        max-width: 45%;
+        border-radius: 0 10px 10px 0;
+    }
+    .banner .container .canada-info {
+        display: block;
+    }
+    .lightboxcontainer {
+        grid-gap: 25px;
+        grid-template-columns: repeat(4, 150px);
+    }
+    .zoom-img {
+        width: 150px;
+        height: 150px;
+    }
+    header img {
+        height: 75px;
+        width: 75px;
+    }
+    header h1 {
+        padding: 15px 0px;
+    }
+    .banner .bg-img {
+        background-image: url("../img/bg992.jpg");
+        width: 100%;
+        height: 500px;
+    }
+    .banner .container {
+        position: absolute;
+        border-radius: 10px;
+        width: 50%;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
+        top: 400px;
+        left: 25px;
+        background: rgba(50, 50, 50, .7);
+    }
+    .banner p {
+        color: white;
+        font-family: 'Noto Sans', 'sans serif';
+        /* text-shadow: 2px 2px 10px blue; */
+        font-size: 15px;
+        padding: 0 15px;
+    }
+    .banner .container .canada-title {
+        font-size: 1.3em;
+        font-family: 'Noto Serif', serif;
+        /* color: red; */
+        text-shadow: 2px 2px 10px rgb(255, 0, 0);
+    }
+    .gn-trigger {
+        display: none;
+    }
+    .gn {
+        display: block !important;
+        position: static;
+    }
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner .container {
+        max-width: 500px;
+    }
+    .gn li {
+        border-bottom: none;
+        font-size: 20px;
+    }
+    .gn li:last-child {
+        box-shadow: none;
+    }
+    .gn a {
+        margin-left: 20px;
+    }
+    .subtitle {
+        margin-top: 50px;
+    }
+    .subtitle h1 {
+        font-size: 30px;
+        color: black;
+        background-color: white;
+        box-shadow: 0px 0px 10px red;
+    }
+    .subtitle h1:hover {
+        box-shadow: 0px 0px 10px black;
+        color: red;
+    }
+}
+
+@media (min-width: 992px) {
+    .aboutimage {
+        width: 800px;
+    }
+    .provinces-and-terr {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .lightboxcontainer {
+        grid-gap: 25px;
+        grid-template-columns: repeat(4, 225px);
+    }
+    .zoom-img {
+        width: 225px;
+        height: 225px;
+    }
+    header .img-link {
+        display: block;
+    }
+    .banner .bg-img {
+        background-image: url("../img/bg1200.jpg");
+        width: 100%;
+        height: 550px;
+    }
+    .banner .container {
+        top: 120px;
+    }
+    .gn li {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .lightboxcontainer {
+        grid-gap: 30px;
+        grid-template-columns: repeat(4, 275px);
+    }
+    .zoom-img {
+        width: 275px;
+        height: 275px;
+    }
+    .banner .bg-img {
+        background-image: url("../img/bg1440.jpg");
+        width: 100%;
+        height: 650px;
+    }
+    .banner .container {
+        top: 500px;
+        padding-bottom: 20px;
+    }
+    .gn li {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .provinces-and-terr .right-col {
+        /* width: 80%; */
+        display: inline;
+    }
+    .banner .container {
+        top: 575px;
+    }
+    .lightboxcontainer {
+        grid-template-columns: repeat(4, 350px);
+    }
+    .zoom-img {
+        width: 350px;
+        height: 350px;
+    }
+    .banner .bg-img {
+        background-image: url("../img/bg2500.jpg");
+        width: 100%;
+        height: 700px;
+    }
+}

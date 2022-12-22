@@ -281,7 +281,6 @@ header img {
     background: white;
     color: rgb(255, 36, 36);
     border: solid 1px rgb(255, 36, 36);
-
 }
 
 
@@ -341,7 +340,7 @@ header img {
 /* Buttons */
 
 .cards button {
-float: right;
+    float: right;
     margin-top: 15px;
     padding: 5px;
     background-color: rgb(200, 200, 200);
@@ -416,7 +415,6 @@ float: right;
     margin: 0 auto;
     width: 95%;
     max-width: 500px;
-
     background-color: rgba(100, 100, 100, .3);
     border-radius: 10px;
 }
@@ -424,7 +422,7 @@ float: right;
 .canada-info ul {
     padding: 15px 0;
     list-style: none;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .canada-info span {
@@ -485,8 +483,8 @@ float: right;
 
 .card-content h2 {
     text-decoration: underline;
-
 }
+
 
 /* newfoundland */
 
@@ -593,7 +591,6 @@ float: right;
     margin-top: 15px;
     justify-content: center;
     max-width: 800px;
-
 }
 
 .about-canada .button {
@@ -610,8 +607,6 @@ float: right;
     background: white;
     color: rgb(255, 36, 36);
     border: solid 1px rgb(255, 36, 36);
-
-
 }
 
 .about-canada p {
@@ -635,7 +630,7 @@ float: right;
 
 .lightboxcontainer {
     /* width: 800px; */
-margin: 0 auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 125px);
     justify-content: center;
